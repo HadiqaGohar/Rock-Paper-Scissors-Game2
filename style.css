@@ -1,0 +1,151 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box; /* Added for consistent box-sizing */
+    text-align: center;
+}
+
+h1 {
+    background-color: #6fb0d3;
+    color: white;
+    height: 5rem;
+    line-height: 5rem;
+}
+
+.choice {
+    height: 160px;
+    width: 160px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+img {
+    height: 150px;
+    width: 150px;
+    object-fit: cover;
+    border-radius: 50%;
+}
+
+.choices {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 3rem;
+    margin-top: 5rem;
+}
+
+.choice:hover {
+    cursor: pointer;
+    background-color: rgb(27, 22, 22);
+}
+
+.scoreboard {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 2rem;
+    margin-top: 4rem;
+    gap: 5rem;
+    color: #36e086;
+}
+
+#userscore, #compscore {
+    font-size: 2.5rem;
+    color: #064323;
+}
+
+.msgcontainer {
+    margin-top: 5rem;
+}
+
+#msg {
+    background-color: #6fb0d3;
+    font-size: 2rem;
+    display: inline;
+    padding: 1rem;
+    border-radius: 1rem;
+    color: white;
+}
+
+body {
+    height: calc(100% - 5rem);
+    width: 100%;
+    background-image: url(/images/R.jpeg);
+    background-size: cover;
+}
+
+.resetbtn button {
+    height: 1.5rem;
+    width: 8rem;
+    margin-top: 1rem;
+    margin-right: .5rem;
+    background-color: aquamarine;
+    font-size: 1rem; /* Added for better readability */
+    padding: 0.2rem; /* Added for better button appearance */
+}
+
+/* Mobile view */
+@media screen and (max-width: 450px) {
+    h1 {
+        background-color: #04964b;
+        height: 3rem;
+        line-height: 3rem;
+    }
+
+    .choice {
+        height: 5.7rem;
+        width: 5.7rem;
+        background-color: rgb(87, 115, 115);
+        border-radius: 50%;
+        justify-content: space-between;
+    }
+
+    img {
+        height: 5.6rem;
+        width: 5.6rem;
+    }
+
+    .choices {
+        gap: 1.5rem;
+        margin-top: 3rem;
+    }
+
+    .scoreboard {
+        font-size: 2rem;
+        margin-top: 5rem;
+    }
+
+    #userscore, #compscore {
+        font-size: 3rem;
+    }
+
+    .msgcontainer {
+        margin-top: 10rem;
+    }
+
+    #msg {
+        background-color: #04964b;
+        font-size: 1.5rem;
+    }
+
+    body {
+        height: calc(100% - 3rem);
+        background-image: url(/images/OIP.jpeg);
+    }
+
+    .resetbtn button {
+        height: 2.3rem;
+        width: 7.5rem;
+        margin-top: 4.2rem;
+        background-color: rgb(4, 63, 88);
+        color: white;
+        font-size: 1rem; /* Added for better readability */
+        padding: 0.5rem; /* Added for better button appearance */
+    }
+}
+.footer-text p {
+  text-align: left;
+  margin-top: 100px;
+}
